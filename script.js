@@ -6,6 +6,8 @@ const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d'); // canvas context 
 
 // const canvas = document.querySelector('#sketch_pad');
+//ADDING CLEAR BUTTON
+const shake_Button = document.querySelector('.shake');
 
 
 
@@ -85,7 +87,17 @@ ctx.stroke();
     
     ctx.stroke();
  }
+ // CLEAR SHAKE FUNCTION
+ 
+ const clear = () => {
+    canvas.classList.add('shake');
+    ctx.clearRect(0,0,width,height)
+     canvas.addEventListener('animationend',() => {
+         canvas.classList.remove('shake');
+     }, {once:true});
+}
 
-//LISTEN FOR ARRROW KEYS
+//LISTEN FOR ARRROW KEYS AND CLEAR BUTTON
+shake_Button.addEventListener('click',clear); 
 window.addEventListener('keydown',handlekey);
 // window.addEventListener('keyup',handlekey);
