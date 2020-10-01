@@ -19,6 +19,7 @@ body {
     background-color: white;
     background-size:cover ;
 }
+
 button {
     position: relative;
     left: 50vh;
@@ -57,3 +58,4 @@ button {
       transform: translate3d(4px, 0, 0);
     }
   }
+
