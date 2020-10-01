@@ -20,3 +20,42 @@ body {
     background-size:cover ;
 }
 
+button {
+    position: relative;
+    left: 50vh;
+    padding: 5px 15px;
+    margin: 2px;
+    background-color: blueviolet;
+    border: 2px solid blueviolet;
+    border-radius: 5px;
+    color: white;
+}
+ canvas.shake {
+     animation: shake 0.5s linear 1; 
+     
+  }
+
+@keyframes shake {
+
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
