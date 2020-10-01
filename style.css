@@ -19,14 +19,4 @@ body {
     background-color: white;
     background-size:cover ;
 }
-button {
-    position: relative;
-    left: 50vh;
-    /* transform: translate(-50%,-50%); */
-    padding: 5px 15px;
-    margin: 2px;
-    background-color: blueviolet;
-    border: 2px solid blueviolet;
-    border-radius: 5px;
-    color: white;
-}
+
